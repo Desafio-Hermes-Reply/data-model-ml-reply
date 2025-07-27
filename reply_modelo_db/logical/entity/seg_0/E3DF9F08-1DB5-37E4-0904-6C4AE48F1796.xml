@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3DF9F08-1DB5-37E4-0904-6C4AE48F1796" name="perfis">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>98B48A4C-77C4-91ED-62F6-B55C76025338</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_perfil" id="B05B2EB0-484E-A152-B4EC-2888A2D2B5D8">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>706C242F-66A6-891C-CD75-A10713BEB5E5</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome perfil" id="5B163C14-9A5E-10AA-7F33-9299D38B357C">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<comment><![CDATA[Nome descritivo do perfil. ex: 'Funcionario', 'Admin Empresa', 'Admin Plataforma', 'Supervisor', 'Operador'.]]></comment>
+<generatorID>8AE8D325-2E88-1680-B936-6E0CC7AC2D43</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="EA913032-45B6-D0FF-F3F6-1EA9348369AE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<comment><![CDATA[Descrição detalhada das permissões associadas a este perfil. ex:'Acesso total à plataforma', 'Gerencia usuários e máquinas da empresa'.]]></comment>
+<generatorID>0A98AA4D-6255-7513-61AE-91073D46A510</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B8E1048C-4EB8-A28E-8EFF-A3B8DFFE1B49" name="PK perfis">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>1F490BB1-C1E1-725B-A123-3C39152A2132</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B05B2EB0-484E-A152-B4EC-2888A2D2B5D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

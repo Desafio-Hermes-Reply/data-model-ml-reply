@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D4C0606-3E17-AF77-AD5D-ED77E083C034" name="ocorrencias">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>62285715-A623-ECE8-4C14-4B3ACF3A8B40</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ocorrencia" id="7E859F74-4BB0-9C05-691A-2A5195A3A480">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>2F4F3F95-DF1E-7D11-7E19-D78D451A7CFE</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_leitura" id="82CAC722-F3D7-16EF-ABE3-AC1C576CF816">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>79B23481-152E-8579-B974-FE3F11C4FEAD</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15572B0D-2297-A45E-9286-C627DE5FB98D" referredColumn="E8BB3161-51E3-0624-9215-3D4D173CFEA0"/>
+</associations>
+</Column>
+<Column name="id_sensor" id="C606D605-9A1D-7820-D0A2-BD8ABFE45361">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>52433E68-F366-FF84-8CBF-EA750742DD96</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15572B0D-2297-A45E-9286-C627DE5FB98D" referredColumn="4BF28BB2-08E7-7D70-868A-BBE12DCA1A15"/>
+</associations>
+</Column>
+<Column name="nmr_ocorrencia" id="FD25F00F-B187-2045-D13E-97F0DB62DAF7">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[Registra o número da ocorrência. Poderá ser visualizado pelo usuário]]></comment>
+<generatorID>6111066B-B7F1-78D8-090C-EB99682F52A1</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_anomalia" id="09A0A9F7-78FB-7BA8-EF9A-B8FEEA07B7F6">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[O que aconteceu (ex: 'Temperatura Alta', 'Vibração', 'Falha Sensor').]]></comment>
+<generatorID>C272B49A-ADE2-3D7A-00EE-B754A8172FA2</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="severidade" id="DD97677B-1FC3-1C22-0BDE-F788AC4B45AC">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[Quão grave é ('Crítica', 'Urgente', 'Aviso')]]></comment>
+<generatorID>6FA38A63-53EE-0709-A4A0-1E9565A9693B</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="1E7136A1-5F97-507F-2701-15C0E852BEA7">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[Uma breve descrição do evento.]]></comment>
+<generatorID>AE4FA9BD-E015-C78F-BD04-84FB2BB930FC</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_ocorrencia" id="C3A44C06-0C5E-D87D-5787-AC72040FB911">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[O status atual ('Aberta', 'Em Análise', 'Resolvida').]]></comment>
+<generatorID>C7348EE8-2DF5-6568-27A6-8E26D2DE5614</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D5CD090-543E-0E6A-ADBD-1F49DF3F6960" name="PK_ocorrencias">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>60CE6463-7A16-4278-F854-D30E28AD69CC</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E859F74-4BB0-9C05-691A-2A5195A3A480"/>
+<colUsage columnID="82CAC722-F3D7-16EF-ABE3-AC1C576CF816"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42BB5256-F01D-F56A-3727-55E11EC39E64" name="FK_ocorrencias_leitura_sen">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>37C54549-47E2-A906-A4E3-4C93EB2E2E94</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82CAC722-F3D7-16EF-ABE3-AC1C576CF816"/>
+<colUsage columnID="C606D605-9A1D-7820-D0A2-BD8ABFE45361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

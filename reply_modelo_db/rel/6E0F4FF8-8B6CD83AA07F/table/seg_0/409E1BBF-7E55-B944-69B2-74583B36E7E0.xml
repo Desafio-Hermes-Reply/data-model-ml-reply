@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="409E1BBF-7E55-B944-69B2-74583B36E7E0" name="leitura_sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>E7D8D3F4-4E6D-43AB-FF7A-6C19CA05D554</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_leitura" id="E8BB3161-51E3-0624-9215-3D4D173CFEA0">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>EE6279FA-43CC-BB9C-807E-F3E925D774A5</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_sensor" id="4BF28BB2-08E7-7D70-868A-BBE12DCA1A15">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>BB7420B7-C1F1-833A-0A5E-3D4B69D012BE</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F04E1ED2-E930-C7C4-D6B3-5DAB540C6D1E" referredColumn="D21B39F7-09CE-C711-ABDF-0EC737163878"/>
+</associations>
+</Column>
+<Column name="valor" id="E4D08EA6-59A9-4438-93BE-E10559BD63B5">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>1B42F8E2-7D93-F70B-C8C0-3D1F99944A52</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_valor" id="631EF8D2-5201-AC04-93E3-CC67103FE622">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>57C2CE6D-DD71-DC67-8F87-177B322A17F6</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora" id="5BDC5C24-460E-13C1-CF40-E16CA7920F8A">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>BAF46E05-8A52-0BF5-40ED-E2CC275DDBE2</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CBB6F9E-3301-8451-A7F4-933A263AB29C" name="PK_leitura_sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>DA639112-0FC0-758B-8218-D21F012CFC84</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8BB3161-51E3-0624-9215-3D4D173CFEA0"/>
+<colUsage columnID="4BF28BB2-08E7-7D70-868A-BBE12DCA1A15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B69E0227-EAF5-7D73-BE9E-78B758CBC86F" name="FK_leitura_sensores_sensores">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>A5DB50DE-0749-2FAB-81C7-581EF4DCFC55</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BF28BB2-08E7-7D70-868A-BBE12DCA1A15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

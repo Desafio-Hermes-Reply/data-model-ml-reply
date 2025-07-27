@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="acessar" directorySegmentName="seg_0" id="8EF85ADD-4D1B-FD1B-2516-377A76617E8B">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>422D8303-4931-5C6A-4392-741463FA91CB</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<sourcePk>666459C3-66F3-7608-9599-0F662AEDE7AB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0354EA68-E74B-C86A-7DE9-7B7D91CDC29E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F7960A18-938A-1B2F-1633-2B70553F7257</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

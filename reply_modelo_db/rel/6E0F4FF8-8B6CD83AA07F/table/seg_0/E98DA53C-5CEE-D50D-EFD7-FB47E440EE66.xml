@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E98DA53C-5CEE-D50D-EFD7-FB47E440EE66" name="usuarios">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>0354EA68-E74B-C86A-7DE9-7B7D91CDC29E</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="2B025A36-2A87-7432-6D4B-BDF088D20B35">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>22DC0DCE-2F5E-D9E2-74C3-6EBD420008B2</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empresa" id="7BDBE37D-D748-A434-ADF9-F939B3AFBE2F">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>45A639A3-D492-AF0F-149F-FCC94A4AEF51</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7B10F34-60DE-9AA6-A524-2E48241653AB" referredColumn="7D4386FF-1B1A-5773-0AC5-8555FC6AA6FE"/>
+</associations>
+</Column>
+<Column name="id_perfil" id="115DC83E-D6A6-0764-01D8-DDA7052E2687">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>D55CF7DE-BA1B-EB40-CBF9-01AAE6483D9C</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A57DA1A-C219-5ACB-F10E-BB1CA9B68C59" referredColumn="A4ED754C-90F8-637F-81FB-B256DBD83133"/>
+</associations>
+</Column>
+<Column name="nome" id="B2D91252-B003-0B90-9401-0AB92109B0F3">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>E3415BE6-E40E-F5F6-71E0-37C5F01A6EC4</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sobrenome" id="995D66A0-DA5F-36CC-C96B-D8635A74BD1B">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>7F67DB54-21A1-F4B7-D75C-AA74F6CEFA49</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="0FD15231-D0B1-E022-4C1C-4030CA1AF2BD">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>FEE2336B-563E-8D1D-9579-7FBA2832D65B</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha_hash" id="E43CD864-F303-3C97-F865-945F29B8CE66">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[Hash da senha do usuário. Ex:'asdfg12345...']]></comment>
+<generatorID>7AB28117-F820-4397-DB10-6D4B4A2C6ADE</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_acesso" id="AEF918DF-A3C5-6439-5FEF-E5C40113AAAD">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>2F302D50-B3E6-D9C1-35F2-D41162ED05ED</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_cadastro" id="1D25A3C3-A13B-0F47-4C6A-C671FF3D3167">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>B0E537F5-D9B7-2991-F822-F346471F958C</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ultimo_login" id="29C026F7-EF1D-AB38-6E28-29532BE3AE29">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<comment><![CDATA[Data e hora do último login do usuário.]]></comment>
+<generatorID>57EC934C-DCD3-298D-2FD7-A6AC3B8F3410</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_ativo" id="F7960D62-E461-1F81-A50D-C995895BB6D8">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>25CF38A1-A5A5-AF98-930B-C2F2620B1AC6</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C691B991-C39C-3FAB-BAC8-2E5485C98291" name="PK_usuarios">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>666459C3-66F3-7608-9599-0F662AEDE7AB</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B025A36-2A87-7432-6D4B-BDF088D20B35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40E2C06B-7C0A-5998-EDE9-CA7D208C8947" name="FK_usuarios_perfis">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>CA473016-22E4-58AC-C5DF-7215A571FEF9</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="115DC83E-D6A6-0764-01D8-DDA7052E2687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A9F640E-B363-C366-960D-AF83CD1541A6" name="FK_usuarios_empresas_cliente">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-27 00:34:04 UTC</createdTime>
+<generatorID>0366E07A-E6DB-5C80-765B-E1A42C1C3804</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BDBE37D-D748-A434-ADF9-F939B3AFBE2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

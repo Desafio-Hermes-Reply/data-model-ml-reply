@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0354EA68-E74B-C86A-7DE9-7B7D91CDC29E" name="usuarios">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>0F778AA2-8001-0CCF-10F2-A96356E20DB3</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="22DC0DCE-2F5E-D9E2-74C3-6EBD420008B2">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>64339970-2A5D-C6AA-5289-C3260767AAF6</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_empresa" id="45A639A3-D492-AF0F-149F-FCC94A4AEF51">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:29:37 UTC</createdTime>
+<generatorID>0366E07A-E6DB-5C80-765B-E1A42C1C3804</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<referedAttribute>609A70FF-889F-458A-5F25-BF2DC371E7AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_perfil" id="D55CF7DE-BA1B-EB40-CBF9-01AAE6483D9C">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-26 23:34:44 UTC</createdTime>
+<generatorID>CA473016-22E4-58AC-C5DF-7215A571FEF9</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<referedAttribute>B05B2EB0-484E-A152-B4EC-2888A2D2B5D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="E3415BE6-E40E-F5F6-71E0-37C5F01A6EC4">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>30C7B360-C260-EA50-97EE-E9FA66DB4AA7</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sobrenome" id="7F67DB54-21A1-F4B7-D75C-AA74F6CEFA49">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>A8D31B3E-DFA2-2118-7171-0F5CD163E07D</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="FEE2336B-563E-8D1D-9579-7FBA2832D65B">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>C6F30A32-31D6-4F0F-B8BB-15BFC447D421</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="senha_hash" id="7AB28117-F820-4397-DB10-6D4B4A2C6ADE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<comment><![CDATA[Hash da senha do usuário. Ex:'asdfg12345...']]></comment>
+<generatorID>02072CE0-449A-62CA-02F2-E9F6CD0FD64E</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_acesso" id="2F302D50-B3E6-D9C1-35F2-D41162ED05ED">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>C560F62B-6D55-0726-E648-79D2B20BB35C</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data cadastro" id="B0E537F5-D9B7-2991-F822-F346471F958C">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>F706F4B7-2B26-1D90-EE74-CFFBA7137F8A</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ultimo_login" id="57EC934C-DCD3-298D-2FD7-A6AC3B8F3410">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<comment><![CDATA[Data e hora do último login do usuário.]]></comment>
+<generatorID>C5C6C600-5517-5552-237B-CE5582C9F1CE</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usuario_ativo" id="25CF38A1-A5A5-AF98-930B-C2F2620B1AC6">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>12FB8A19-693D-AB5F-4456-0FEE5619E2E4</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="666459C3-66F3-7608-9599-0F662AEDE7AB" name="PK usuarios">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-07-25 19:03:56 UTC</createdTime>
+<generatorID>8ADE5D1F-DC00-BB13-1203-79D5656EC4D7</generatorID>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22DC0DCE-2F5E-D9E2-74C3-6EBD420008B2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
