@@ -4,7 +4,7 @@
 <createdTime>2025-07-26 23:03:33 UTC</createdTime>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,20 +20,20 @@
 <createdTime>2025-07-26 23:03:45 UTC</createdTime>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_leitura" id="79B23481-152E-8579-B974-FE3F11C4FEAD">
+<Attribute name="id_leitura_sensor" id="79B23481-152E-8579-B974-FE3F11C4FEAD">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-27 00:09:21 UTC</createdTime>
 <generatorID>37C54549-47E2-A906-A4E3-4C93EB2E2E94</generatorID>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <referedAttribute>EE6279FA-43CC-BB9C-807E-F3E925D774A5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -41,15 +41,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_sensor" id="52433E68-F366-FF84-8CBF-EA750742DD96">
+<Attribute name="id_maquina" id="378E5BA9-8657-C2D7-0D82-1EE17164AC99">
 <createdBy>Beatriz</createdBy>
-<createdTime>2025-07-27 00:22:12 UTC</createdTime>
-<generatorID>37C54549-47E2-A906-A4E3-4C93EB2E2E94</generatorID>
+<createdTime>2025-08-25 00:22:15 UTC</createdTime>
+<generatorID>B6297A45-4950-9C10-8D90-A3EA7471FC6B</generatorID>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
-<referedAttribute>BB7420B7-C1F1-833A-0A5E-3D4B69D012BE</referedAttribute>
+<referedAttribute>580B73FD-ABD4-7A33-A16F-CB5C9C6F1422</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -61,7 +61,7 @@
 <comment><![CDATA[Registra o número da ocorrência. Poderá ser visualizado pelo usuário]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -74,7 +74,7 @@
 <comment><![CDATA[O que aconteceu (ex: 'Temperatura Alta', 'Vibração', 'Falha Sensor').]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -89,7 +89,7 @@
 <comment><![CDATA[Quão grave é ('Crítica', 'Urgente', 'Aviso')]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -103,7 +103,7 @@
 <comment><![CDATA[Uma breve descrição do evento.]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -118,7 +118,7 @@
 <comment><![CDATA[O status atual ('Aberta', 'Em Análise', 'Resolvida').]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -133,12 +133,13 @@
 <createdTime>2025-07-26 23:39:07 UTC</createdTime>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="D1C1B5DA-E990-C06A-29DC-E157F658F692" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>2F4F3F95-DF1E-7D11-7E19-D78D451A7CFE</attributeRef>
 <attributeRef>79B23481-152E-8579-B974-FE3F11C4FEAD</attributeRef>
+<attributeRef>378E5BA9-8657-C2D7-0D82-1EE17164AC99</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

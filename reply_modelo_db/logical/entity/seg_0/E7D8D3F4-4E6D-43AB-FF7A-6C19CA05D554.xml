@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7D8D3F4-4E6D-43AB-FF7A-6C19CA05D554" name="leitura_sensores">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7D8D3F4-4E6D-43AB-FF7A-6C19CA05D554" name="leituras_sensores">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>D73B428D-C98F-A5A5-76C3-A0F6600EFFB9</generatorID>
@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_leitura" id="EE6279FA-43CC-BB9C-807E-F3E925D774A5">
+<Attribute name="id_leitura_sensor" id="EE6279FA-43CC-BB9C-807E-F3E925D774A5">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>2AA24209-786E-A6AF-90A5-017C7D523A70</generatorID>
@@ -29,21 +29,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_sensor" id="BB7420B7-C1F1-833A-0A5E-3D4B69D012BE">
+<Attribute name="data_hora" id="6104CB28-A464-07E2-1B18-3045C236E7CF">
 <createdBy>Beatriz</createdBy>
-<createdTime>2025-07-27 00:22:12 UTC</createdTime>
-<generatorID>A5DB50DE-0749-2FAB-81C7-581EF4DCFC55</generatorID>
+<createdTime>2025-08-22 04:31:49 UTC</createdTime>
+<comment><![CDATA[data e hora do registro da leitura]]></comment>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
 <engineerTo>
 <item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
 </engineerTo>
-<referedAttribute>8CA3C25E-6966-F85A-E7E6-A89617906379</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT047</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valor" id="1B42F8E2-7D93-F70B-C8C0-3D1F99944A52">
+<Attribute name="temperatura" id="1B42F8E2-7D93-F70B-C8C0-3D1F99944A52">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>55B346F8-33C2-7D4C-B3D1-DA47F91F3C8D</generatorID>
@@ -53,10 +52,12 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo_valor" id="57C2CE6D-DD71-DC67-8F87-177B322A17F6">
+<Attribute name="vibracao" id="57C2CE6D-DD71-DC67-8F87-177B322A17F6">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>15CF9C53-9433-FA98-F54F-EF364CE0C4AB</generatorID>
@@ -66,11 +67,12 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="data_hora" id="BAF46E05-8A52-0BF5-40ED-E2CC275DDBE2">
+<Attribute name="corrente" id="BAF46E05-8A52-0BF5-40ED-E2CC275DDBE2">
 <createdBy>Beatriz</createdBy>
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>CB1517F3-06B6-3E06-961C-3D600C3AECD6</generatorID>
@@ -80,8 +82,113 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pressao" id="1FB49752-F46A-FC33-93AD-4642DFD81F63">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:26:26 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="umidade" id="D38F7344-90E6-1536-68CD-B6D8EABB5CA4">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:27:02 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tensao" id="AAD1508D-4BE3-A8A2-1873-87F9621C81C0">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:27:39 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel" id="6BADCAE4-66CC-B37F-CE4A-9E3AEA83E1E8">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:26:48 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="velocidade" id="19364BE4-13F8-9894-39E1-A8F23A3C9BED">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:26:10 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="posicao" id="058392B9-6CA7-0E6F-3A6D-20B487CD9A41">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:26:20 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qualidade_ar" id="484B2CC6-88C0-D077-BD03-F5B249931B8B">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:26:57 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fumaca" id="D91E246B-ED44-15F7-03F6-27CA617911BE">
+<createdBy>Beatriz</createdBy>
+<createdTime>2025-08-22 04:27:55 UTC</createdTime>
+<ownerDesignName>reply_modelo_db</ownerDesignName>
+<engineerTo>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -90,13 +197,13 @@
 <createdTime>2025-07-25 19:03:56 UTC</createdTime>
 <generatorID>F9889533-2BBE-F9E2-9C30-3A2246CBC0D9</generatorID>
 <ownerDesignName>reply_modelo_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="true"/>
+<item key="6E0F4FF8-F0F9-D248-B45B-8B6CD83AA07F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>EE6279FA-43CC-BB9C-807E-F3E925D774A5</attributeRef>
-<attributeRef>BB7420B7-C1F1-833A-0A5E-3D4B69D012BE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
