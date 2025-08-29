@@ -52,7 +52,7 @@
 
 ## 📜 Descrição
 
-""
+Este modelo de dados foi projetado para monitorar máquinas industriais, capturando leituras de sensores, gerenciando informações sobre as máquinas e registrando ocorrências e anomalias.
 
 ## Estrutura do Banco de Dados
 ### Entidades e Seus Atributos
