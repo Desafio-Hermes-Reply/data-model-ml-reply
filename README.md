@@ -192,9 +192,15 @@ Em ambientes industriais, o monitoramento da temperatura é um fator crítico pa
 
 Os dados foram carregados de um CSV (dados_sensores.csv), representando leituras históricas dos sensores.
 
-### Exemplo de gráfico/estatística inicial
+### Exemplo de estatística inicial
+
+<img width="900" height="700" alt="estatistica_inicial" src="assets/Captura de tela 2025-09-07 204515.png" />
 
 ### print dos graficos
+<img width="400" height="500" src="assets/Captura de tela 2025-09-07 190226.png" />
+<img width="500" height="500" src="assets/Captura de tela 2025-09-07 200126.png" />
+<img width="400" height="500" src="assets/Captura de tela 2025-09-07 200130.png" />
+<img width="600" height="500" src="assets/Captura de tela 2025-09-07 195900.png" />
 
 ### trecho do código
 ```
