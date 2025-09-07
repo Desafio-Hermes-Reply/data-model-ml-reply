@@ -191,6 +191,13 @@ Em ambientes industriais, o monitoramento da temperatura é um fator crítico pa
 ### print dos graficos
 
 
+### trecho do código
+```
+X = df[['velocidade', 'corrente']]
+Y = df['temperatura']
+model = RandomForestRegressor()
+model.fit(X_train, Y_train)
+```
 
 ## 📋 Licença
 
