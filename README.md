@@ -208,7 +208,79 @@ Y = df['temperatura']
 model = RandomForestRegressor()
 model.fit(X_train, Y_train)
 ```
+---
+## 🧩 Pipeline do Modelo de ML
 
+O notebook segue as seguintes etapas:
+
+Carregamento dos dados
+
+Utilização do dataset dados_sensores.csv, contendo leituras históricas de sensores.
+
+Análise Exploratória (EDA)
+
+Visualização de estatísticas (info(), describe()),
+
+Detecção de valores ausentes,
+
+Gráficos de dispersão e distribuição.
+
+Pré-processamento
+
+Seleção de atributos relevantes (ex.: velocidade, corrente, umidade etc.),
+
+Separação dos dados em treino e teste com train_test_split.
+
+Modelagem
+Foram testados diferentes algoritmos de regressão:
+
+Regressão Linear
+
+Decision Tree Regressor
+
+Random Forest Regressor
+
+Gradient Boosting Regressor
+
+XGBoost
+
+LightGBM
+
+CatBoost
+
+Avaliação
+Métricas utilizadas:
+
+R² (Coeficiente de Determinação)
+
+MAE (Mean Absolute Error)
+
+RMSE (Root Mean Squared Error)
+
+## 📊 Resultados Obtidos
+
+Os principais resultados obtidos foram:
+
+Random Forest Regressor: R² ≈ 0.85, RMSE ≈ 0.40
+
+XGBoost: R² ≈ 0.87, RMSE ≈ 0.38
+
+CatBoost: R² ≈ 0.75, RMSE ≈ 0.53
+
+🔎 Conclusão: o modelo XGBoost apresentou o melhor desempenho, mostrando maior capacidade preditiva para estimar a temperatura com base nas variáveis monitoradas.
+
+## ▶️ Como Executar
+
+Clone o repositório, instale as dependências e rode o notebook:
+```
+git clone https://github.com/Desafio-Hermes-Reply/data-model-ml-reply.git
+```
+```
+pip install -r requirements.txt
+```
+```
+jupyter notebook ml_basico.ipynb
+```
 ## 📋 Licença
 
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
