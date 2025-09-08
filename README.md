@@ -188,8 +188,19 @@ Os limites de um parâmetro de uma máquina podem resultar em várias ocorrênci
 
 Em ambientes industriais, o monitoramento da temperatura é um fator crítico para garantir a segurança operacional, a qualidade do produto e a preservação dos equipamentos. Pequenas variações podem indicar falhas em sistemas de refrigeração, superaquecimento de motores, desgaste de componentes ou até riscos de incêndio.
 
-### print dos graficos
+### armazenamento dos dados
 
+Os dados foram carregados de um CSV (dados_sensores.csv), representando leituras históricas dos sensores.
+
+### Exemplo de estatística inicial
+
+<img width="900" height="700" alt="estatistica_inicial" src="assets/Captura de tela 2025-09-07 204515.png" />
+
+### print dos graficos
+<img width="400" height="500" src="assets/Captura de tela 2025-09-07 190226.png" />
+<img width="500" height="500" src="assets/Captura de tela 2025-09-07 200126.png" />
+<img width="400" height="500" src="assets/Captura de tela 2025-09-07 200130.png" />
+<img width="600" height="500" src="assets/Captura de tela 2025-09-07 195900.png" />
 
 ### trecho do código
 ```
